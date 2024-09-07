@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+    --grey-700: #333333;
+    --grey-800: #1f1f1f;
+    --grey-900: #141414;
+    --green: #c4f82a;
+    --white: #ffffff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--grey-900);
+    font-family: "Inter";
+}
+
+
+.card-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--grey-800);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    min-width: 29rem;
+    max-height: 61.1rem;
+    color: var(--white);
+    border-radius: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.card-img {
+    min-height: 8.8rem;
+    min-width: 8.8rem;
+    border-radius: 50%;
+    background-image: url("assets/images/avatar-jessica.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (min-width: 320px) {
+
+    .card-container {
+        padding: 0 1.6rem;
+    }
+    .card {
+        padding: 1.2rem;
+        width: 29rem;
+        height: 57.9rem;
+    }
+}
+
+@media (min-width: 375px) {
+
+    .card-container {
+        padding: 0 2.4rem;
+    }
+    .card {
+        padding: 2.4rem;
+        width: 32.7rem;
+        height: 57.9rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .card-container {
+        padding: 0 4rem;
+    }
+    .card {
+        padding: 4rem;
+        width: 45.6rem;
+        height: 61.1rem;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .card-container {
+        padding: 0;
+    }
+    .card {
+        padding: 4rem;
+        width: 38.4rem;
+        height: 61.1rem;
+    }
+}
+
+
+.card h1,
+.card h2,
+.card p,
+.card li a {
+    line-height: 150%;
+}
+
+.card-headings {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.card h1 {
+    font-size: 2.4rem;
+}
+
+.card h2 {
+    color: var(--green);
+    font-size: 1.4rem;
+}
+
+.card p {
+    font-weight: 400;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.link {
+    height: 4.5rem;
+}
+
+
+.link a {
+    display: block;
+    height: 100%;
+}
+
+.link a:focus > button {
+    background-color: var(--green);
+    color: black;
+}
+
+
+.link a button {
+    color: var(--white);
+    background-color: var(--grey-700);
+    height: 100%;
+    width: 100%;
+    padding: 1.2rem;
+    border: none;
+    border-radius: .8rem;
+    font-family: "Inter";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.link a button:hover,
+.link a button:focus {
+    background-color: var(--green);
+    color: black;
+}
+
+
+.links-container li a:link {
+    text-decoration: none;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution p {
+    margin: 1rem;
+}
+.attribution a { 
+    color: var(--green);
+}
